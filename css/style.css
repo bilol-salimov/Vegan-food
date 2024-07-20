@@ -1,0 +1,158 @@
+@font-face {
+  font-family: "font-1";
+  src: url("../fonts/HanaleiFill-Regular.woff"); }
+@font-face {
+  font-family: "font-2";
+  src: url("../fonts/playfairdisplay-variablefont_wght-webfont.woff2"); }
+main .main-body .recipes .recipe-item .recipe .gradient, main .main-body .recipes .recipe-item .recipe p {
+  transition: all 0.3s ease; }
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+html {
+  font-size: 10px;
+  font-family: "font-2", serif; }
+
+h1 {
+  font-size: 4.6rem;
+  font-weight: bold; }
+
+h2 {
+  font-size: 3.6rem;
+  font-weight: bold; }
+
+p,
+a,
+button,
+label,
+input {
+  font-size: 1.6rem; }
+
+ul {
+  list-style: none; }
+
+a {
+  text-decoration: none;
+  color: black; }
+
+.container {
+  width: 95%;
+  margin: auto; }
+
+nav {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem; }
+  nav #logo {
+    width: 160px; }
+  nav ul {
+    display: flex;
+    align-items: center; }
+    nav ul li {
+      margin-left: 12px; }
+      nav ul li a:hover {
+        text-shadow: 0 0 0.5px black; }
+  nav .nav-icon {
+    filter: invert(100%);
+    cursor: pointer;
+    display: none; }
+
+main {
+  text-align: center; }
+  main .main-head {
+    width: 70%;
+    margin: auto; }
+    main .main-head .title {
+      text-transform: uppercase; }
+    main .main-head p {
+      word-spacing: 4px;
+      line-height: 30px;
+      margin: 40px 0; }
+  main .main-body h2 {
+    margin: 30px 0 20px 0;
+    text-transform: uppercase; }
+  main .main-body .recipes {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px 20px; }
+    main .main-body .recipes .recipe-item:nth-child(1) .recipe {
+      background-image: url("../images/1.jpg"); }
+    main .main-body .recipes .recipe-item:nth-child(2) .recipe {
+      background-image: url("../images/2.jpg"); }
+    main .main-body .recipes .recipe-item:nth-child(3) .recipe {
+      background-image: url("../images/3.jpg"); }
+    main .main-body .recipes .recipe-item:nth-child(4) .recipe {
+      background-image: url("../images/4.jpg"); }
+    main .main-body .recipes .recipe-item {
+      flex: 1 1 48%; }
+      main .main-body .recipes .recipe-item .recipe {
+        height: 500px;
+        position: relative;
+        overflow: hidden;
+        background-position: center;
+        background-size: cover; }
+        main .main-body .recipes .recipe-item .recipe .gradient {
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          background-color: rgba(0, 0, 0, 0.4);
+          opacity: 0; }
+        main .main-body .recipes .recipe-item .recipe:hover p, main .main-body .recipes .recipe-item .recipe:hover .gradient {
+          opacity: 1; }
+        main .main-body .recipes .recipe-item .recipe p {
+          font-size: 2.8rem;
+          letter-spacing: 5px;
+          opacity: 0;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          color: white;
+          z-index: 1; }
+
+footer {
+  height: 150px;
+  text-align: center;
+  display: flex;
+  justify-content: start;
+  align-items: center; }
+  footer a:hover {
+    text-decoration: underline; }
+
+@media screen and (max-width: 772px) {
+  nav ul {
+    display: none; }
+  nav .nav-icon {
+    display: block; }
+
+  main .main-head {
+    width: 90%; }
+    main .main-head p {
+      word-spacing: normal; }
+  main .main-body .recipes .recipe-item {
+    flex: 1 1 100%; }
+    main .main-body .recipes .recipe-item .recipe p {
+      letter-spacing: 1px; } }
+@media screen and (max-width: 576px) {
+  html {
+    font-size: 8px; }
+
+  nav {
+    width: 100%; }
+
+  main .main-head {
+    width: 100%; } }
+
+/*# sourceMappingURL=style.css.map */
